@@ -12,9 +12,9 @@ public class Cliente {
     private String cidade;
     private String estado;
 
-    public Cliente (String nome, Long cpf, Long tel, String end, Integer num, String cidade, String estado) {
+    public Cliente (String nome, String cpf, String tel, String end, String num, String cidade, String estado) {
         this.nome = nome;
-        this.cpf = Long.valueOf(cpf.trim);
+        this.cpf = Long.valueOf(cpf.trim());
         this.tel = Long.valueOf(tel.trim());
         this.end = end;
         this.numero = Integer.valueOf(num.trim());
