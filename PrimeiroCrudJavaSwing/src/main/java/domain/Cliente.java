@@ -83,7 +83,13 @@ public class Cliente {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Cliente cliente)) return false;
-        return Objects.equals(nome, cliente.nome) && Objects.equals(cpf, cliente.cpf) && Objects.equals(tel, cliente.tel) && Objects.equals(end, cliente.end) && Objects.equals(numero, cliente.numero) && Objects.equals(cidade, cliente.cidade) && Objects.equals(estado, cliente.estado);
+        return Objects.equals(nome, cliente.nome) &&
+                Objects.equals(cpf, cliente.cpf) &&
+                Objects.equals(tel, cliente.tel) &&
+                Objects.equals(end, cliente.end) &&
+                Objects.equals(numero, cliente.numero) &&
+                Objects.equals(cidade, cliente.cidade) &&
+                Objects.equals(estado, cliente.estado);
     }
 
     @Override
